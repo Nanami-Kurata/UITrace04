@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITrace04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8BT-Ew-kBs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SmF-C4-MhH">
+                                        <rect key="frame" x="0.0" y="0.0" width="1282" height="400"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="洋服１" translatesAutoresizingMaskIntoConstraints="NO" id="aAD-jb-7Ag">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="txw-lv-xUt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="洋服２" translatesAutoresizingMaskIntoConstraints="NO" id="AqO-2M-tz7">
+                                                <rect key="frame" x="434" y="0.0" width="414" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="Tee-jc-6u6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="洋服３" translatesAutoresizingMaskIntoConstraints="NO" id="d44-Pp-xm7">
+                                                <rect key="frame" x="868" y="0.0" width="414" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="B1t-iZ-kkj"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aAD-jb-7Ag" firstAttribute="top" secondItem="SmF-C4-MhH" secondAttribute="top" id="4MW-kv-Hfq"/>
+                                            <constraint firstAttribute="bottom" secondItem="AqO-2M-tz7" secondAttribute="bottom" id="WAD-GL-clD"/>
+                                            <constraint firstAttribute="bottom" secondItem="d44-Pp-xm7" secondAttribute="bottom" id="m4j-Rn-AJD"/>
+                                            <constraint firstItem="AqO-2M-tz7" firstAttribute="top" secondItem="SmF-C4-MhH" secondAttribute="top" id="r77-9t-ynj"/>
+                                            <constraint firstItem="d44-Pp-xm7" firstAttribute="top" secondItem="SmF-C4-MhH" secondAttribute="top" id="uoK-PG-cKr"/>
+                                            <constraint firstAttribute="height" constant="400" id="xl9-Co-6NI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SmF-C4-MhH" secondAttribute="bottom" id="1I2-J7-3rW"/>
+                                    <constraint firstAttribute="trailing" secondItem="SmF-C4-MhH" secondAttribute="trailing" id="DnI-bB-8Ma"/>
+                                    <constraint firstItem="SmF-C4-MhH" firstAttribute="leading" secondItem="8BT-Ew-kBs" secondAttribute="leading" id="gVZ-7a-wli"/>
+                                    <constraint firstItem="SmF-C4-MhH" firstAttribute="top" secondItem="8BT-Ew-kBs" secondAttribute="top" id="lqd-X8-CwS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8BT-Ew-kBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PAt-df-kHH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8BT-Ew-kBs" secondAttribute="trailing" id="avp-S4-zIK"/>
+                            <constraint firstItem="8BT-Ew-kBs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dAW-Ku-Od4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8BT-Ew-kBs" secondAttribute="bottom" id="uCu-q8-2HE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="aAD-jb-7Ag" id="ODI-ua-znS"/>
+                        <outlet property="image2" destination="AqO-2M-tz7" id="Q0n-R4-yEv"/>
+                        <outlet property="image3" destination="d44-Pp-xm7" id="Geb-Ah-FvC"/>
+                        <outlet property="scrollView" destination="8BT-Ew-kBs" id="7ci-b9-08E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="洋服１" width="3220" height="4622"/>
+        <image name="洋服２" width="4000" height="2667"/>
+        <image name="洋服３" width="3604" height="4805"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
